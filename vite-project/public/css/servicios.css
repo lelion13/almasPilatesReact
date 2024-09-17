@@ -1,0 +1,48 @@
+@import url(./navbar.css);
+@import url(./footer.css);
+@import url(./general.css);
+
+#cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color:  #f5e1fc9c */
+}
+    
+#cards div{
+    padding: 10px;
+    border: black 2px solid;
+    border-radius: 8px;
+    background-color: #f5e1fc9c;
+    filter: drop-shadow(5px 4px 4px #f5e1fc9c);
+    transition: all 0.5s;
+    /* opacity: 5; */
+    position: relative;
+}
+#cards .cards-img {
+    width: 100%;
+    margin: auto;
+}
+
+#cards div p,#cards div h2{
+    text-align: center;
+}
+/*Pantallas de mas de 473px*/
+@media screen and (min-width: 473px) {
+    .cards-img {
+        width: 100%;
+        margin: auto;
+    }
+
+    #cards div{
+        width: 35%;
+    }
+
+    #cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}
