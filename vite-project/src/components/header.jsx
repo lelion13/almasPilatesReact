@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import logoAlmas from '../public/img/logoAlmas.png'
+import logoAlmas from '../../public/img/logoAlmas.png'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-import '../public/css/index.css'
-import '../../public/css/nav.css'
+import '../../public/css/index.css'
+import '../../public/css/navbar.css'
 import React from 'react'
 
 function header() {
