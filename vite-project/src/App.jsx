@@ -6,7 +6,13 @@ import Header from '../src/components/header';
 import Carrousel from './components/Carrousel';
 
 function App() {
-  
+  const navLinks = [
+    { name: "Inicio", url: "./index.html" },
+    { name: "Galeria", url: "./about.html" },
+    { name: "Servicios", url: "./servicios.html" },
+    { name: "Contacto", url: "./contacto.html" },
+  ];
+
   return (
     <>
       <Header/>
