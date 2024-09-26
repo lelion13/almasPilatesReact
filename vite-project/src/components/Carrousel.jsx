@@ -14,9 +14,10 @@ function Carrousel({
         <div className="conteCarrousel">
         {images.map((image, index)=>(
           <CarrouselItem
-          key={index}
-          idItemCarrousel = {image.idItemCarrousel}
-          Image = {image.image}
+          // key={index}
+          // idItemCarrousel = {image.idItemCarrousel}
+          idItemCarrousel = {index}
+          Image = {image.Image}
           flechaIzquierda = {image.flechaIzquierda}
           flechaDerecha = {image.flechaDerecha}
            />

@@ -1,14 +1,15 @@
 import PropTypes from "prop-types";
 
 function CarrouselItem({
-id,
+// id,
 idItemCarrousel,
 Image,
 flechaIzquierda,
 flechaDerecha,
 }) {
     return (
-        <div className="itemCarrousel" id= {idItemCarrousel}>
+        <div className="itemCarrousel" id= {`itemCarrousel-${idItemCarrousel+1}`}>
+        
             <div className="itemCarrouselTarjeta">
                 <img src={Image} alt="Carrousel1" />
             </div>
@@ -25,7 +26,7 @@ flechaDerecha,
 }
 
 CarrouselItem.prototype = {
-    id: PropTypes.string.isRequired,
+    // id: PropTypes.string.isRequired,
     idItemCarrousel: PropTypes.string.isRequired,
     Image: PropTypes.string.isRequired,
     flechaIzquierda: PropTypes.string.isRequired,
