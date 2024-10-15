@@ -2,14 +2,14 @@
 //import viteLogo from '/vite.svg';
 //import './App.css'
 // import '../public/css/index.css';
-import Header from '../src/components/header';
+import Header from './components/layout/Header';
 import Carrousel from './components/Carrousel';
-import footer from './components/layout/footer'
+import footer from './components/layout/Footer'
 
 function App() {
   const navLinks = [
     { name: "Inicio", url: "./index.html" },
-    { name: "Galeria", url: "./about.html" },
+    { name: "Galeria", url: "./Galeri.html" },
     { name: "Servicios", url: "./servicios.html" },
     { name: "Contacto", url: "./contacto.html" },
   ];
