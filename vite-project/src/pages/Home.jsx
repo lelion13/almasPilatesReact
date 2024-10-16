@@ -1,5 +1,6 @@
 import Carrousel from "../components/Carrousel";
 import Page from "../Page";
+import "../../public/css/index.css";
 
 function Home() {
   const imagenesCarrousel = [

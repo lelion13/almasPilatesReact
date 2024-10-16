@@ -17,6 +17,7 @@ function Header() {
         <nav>
             <ul className="menu">
                 <li><a href="/">Inicio</a></li>
+                <li><a href="/Galeria">Galeria</a></li>
                 <li><a href="/Servicios">Servicios</a></li>
                 <li><a href="/Contacto">Contacto</a></li>
             </ul>

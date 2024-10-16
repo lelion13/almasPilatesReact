@@ -1,6 +1,7 @@
 import Page from "../Page";
 import "../../public/css/contacto.css";
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 
 function Contacto() {
@@ -14,12 +15,38 @@ function Contacto() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+     // Obtenemos el botón de enviar para cambiar su estado
+     const btn = document.getElementById('enviar');
+     btn.value = "Enviando...";
+ 
+     // Define los IDs del servicio y la plantilla
+     const serviceID = 'service_o5e397c';
+     const templateID = 'template_gz3479r';
+ 
+     // Utiliza emailjs para enviar el formulario
+     emailjs.sendForm(serviceID, templateID, event.target, 'Z--Qe2Rp7OwGvyACm') // Reemplaza 'YOUR_USER_ID' con tu User ID de EmailJS
+       .then(() => {
+         btn.value = "Enviar";
+         alert('Correo enviado, nos contactaremos a la brevedad!');
+         handleReset(); // Resetea el formulario
+       }, (err) => {
+         btn.value = "Enviar";
+         alert(JSON.stringify(err));
+       });
+      // };
     console.log({ name, surname, telefono, email, genero, medio, message })
   };
 
-  const handleChange = (event) => {
-    setGenero(event.target.value);
+  const handleReset = () => {
+    setName("");
+    setSurname("");
+    setTelefono("");
+    setEmail("");
+    setGenero("");
+    setMedio("");
+    setMessage("");
   };
+  
 
   return (
     <Page>
@@ -48,15 +75,15 @@ function Contacto() {
 
             <fieldset className="genero">
               <legend>Indique su genero</legend>
-              <input type="radio" id="masculino" name="genero" value="masculino" checked={genero === "masculino"} onChange={handleChange} />
+              <input type="radio" id="masculino" name="genero" value="masculino" checked={genero === "masculino"} onChange={(e) => setGenero(e.target.value)} />
               <label htmlFor="masculino">Masculino</label>
-              <input type="radio" id="femenino" name="genero" value="femenino" checked={genero === "femenino"} onChange={handleChange} />
+              <input type="radio" id="femenino" name="genero" value="femenino" checked={genero === "femenino"} onChange={(e) => setGenero(e.target.value)} />
               <label htmlFor="femenino">Femenino</label>
             </fieldset>
 
             <label htmlFor="medio">Por que medio nos conociste?</label>
             <select name="medio" id="medio" value={medio} onChange={(e) => setMedio(e.target.value)} >
-              <option value="" disabled selected>Seleccione una opcion</option>
+              <option value="">Seleccione una opcion</option>
               <option value="google">Google</option>
               <option value="facebook">Facebook</option>
               <option value="instagram">Instagram</option>
@@ -70,7 +97,7 @@ function Contacto() {
 
             <div className="contacto-boton">
               <input type="submit" value="Enviar" id="enviar" name="enviar" />
-              <input type="reset" value="Cancelar" id="cancelar" name="cancelar" />
+              <input type="reset" value="Cancelar" id="cancelar" name="cancelar" onClick={handleReset} />
             </div>
           </form>
         </section>
