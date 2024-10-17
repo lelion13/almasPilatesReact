@@ -14,7 +14,7 @@ function Carrousel({
         <div className="conteCarrousel">
         {images.map((image, index)=>(
           <CarrouselItem
-          // key={index}
+          key={index}
           // idItemCarrousel = {image.idItemCarrousel}
           idItemCarrousel = {index}
           Image = {image.Image}

@@ -10,9 +10,9 @@ function Home() {
     { idItemCarrousel: "itemCarrousel-4", Image:'/img/carrusel4.jpg', flechaIzquierda:"#itemCarrousel-3" , flechaDerecha:"#itemCarrousel-1"},
   ];
 
-  return <Page>
+  return ( <Page>
     <Carrousel images={imagenesCarrousel}/>
-    </Page>;
+    </Page>);
 }
 
 export default Home;

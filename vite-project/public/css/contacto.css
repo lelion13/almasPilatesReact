@@ -65,7 +65,7 @@ form button {
 
 /*Pantallas de mas de 473px*/
 @media screen and (min-width: 473px){
-    main{
+    .contacto-main{
         grid-template-columns: repeat(2, 1fr);
     }
     #section-mapa{
