@@ -1,15 +1,13 @@
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
-
+import "../public/css/index.css";
 function Page ({children}){
     return (
-        <>
-        <body style={{ position: "relative", minHeight: "90vh" }}>
+        <body>
             <Header />
                 {children}
             <Footer />   
         </body>
-        </>
     );
 }
 

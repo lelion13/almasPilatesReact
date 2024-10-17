@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../../public/css/index.css";
+// import "../../public/css/index.css";
 
 function CarrouselItem({
 // id,

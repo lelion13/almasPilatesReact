@@ -5,7 +5,7 @@ import Home from "./pages/Home.jsx";
 import Contacto from "./pages/Contacto.jsx";
 import Servicios from "./pages/Servicios.jsx";
 import App from './App.jsx'
-import './index.css'
+// import './index.css'
 import Galeria from './pages/Galeria.jsx';
 
 const routes = createBrowserRouter([

@@ -7,7 +7,6 @@ import '../../../public/css/navbar.css'
 
 function Header() {
   return (
-    <>
     <header>
       <div className="logos">
         <a href="/">
@@ -27,7 +26,6 @@ function Header() {
             </button> */}
         </nav>
     </header>
-    </>
   )
 }
 

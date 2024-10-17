@@ -1,4 +1,4 @@
-import "../../public/css/index.css";
+// import "../../public/css/index.css";
 // import carrousel1 from '../../public/img/carrusel1.jpg';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import PropTypes from "prop-types";
