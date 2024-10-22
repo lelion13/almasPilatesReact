@@ -1,4 +1,3 @@
-import React from 'react';
 import Page from '../Page';
 import "../../public/css/about.css";
 

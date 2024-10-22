@@ -1,0 +1,23 @@
+.CardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Card{
+    width: 40vw;
+    margin: 10px;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 10px;
+    box-shadow: 2px;
+}
+
+.CardImage {
+    width: 100%; /* Ocupa el ancho completo de la tarjeta */
+    height: 300px; /* Define una altura fija */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsión */
+    border-radius: 8px; /* Opcional: para esquinas redondeadas */
+/* width: 200px; */
+}

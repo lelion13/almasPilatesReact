@@ -25,6 +25,7 @@ function Header() {
                 <li><a href="/Galeria">Galeria</a></li>
                 <li><a href="/Servicios">Servicios</a></li>
                 <li><a href="/Contacto">Contacto</a></li>
+                <li><a href="/Nasa">Fetch a Nasa</a></li>
             </ul>
                         
             {/* <button className="menu-toggle">
